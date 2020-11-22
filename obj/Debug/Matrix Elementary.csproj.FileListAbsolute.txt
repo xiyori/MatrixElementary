@@ -1,0 +1,39 @@
+D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.exe.config
+D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.exe
+D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.pdb
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.csprojResolveAssemblyReference.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Dialogue.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\MainWindow.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\App.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary_MarkupCompile.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary_MarkupCompile.lref
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Dialogue.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\MainWindow.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.g.resources
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix_Elementary.Properties.Resources.resources
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.csproj.GenerateResource.Cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.csproj.CoreCompileInputs.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.exe
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.pdb
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\DialogCoeff.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\DialogCoeff.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\App.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\FadingPopupControl.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\FadingPopupControl.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.exe.manifest
+D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.application
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.exe.manifest
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.application
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ActionPanel.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ActionPanel.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\LaTeX_ExportWindow.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\LaTeX_ExportWindow.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Settings.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\StringDialog.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Settings.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\StringDialog.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ChooseDialog.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ChooseDialog.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\RandomSettings.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\RandomSettings.baml
