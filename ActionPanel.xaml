@@ -1,0 +1,61 @@
+﻿<Window x:Name="actionWindow" x:Class="Matrix_Elementary.ActionPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matrix_Elementary"
+        mc:Ignorable="d"
+        Title="Action Panel" Height="230" Width="320.8" ResizeMode="NoResize" Closing="Window_Closing" PreviewKeyUp="actionWindow_PreviewKeyUp" Icon="images/ico_white.ico">
+    <Window.Resources>
+        <Style TargetType="Button" x:Name="DefaultButton"/>
+        <Style TargetType="TextBox" x:Name="DefaultTextBox"/>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:Commands.CtrlA}" Executed="newButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlT}" Executed="transposeButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlI}" Executed="inverseButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlG}" Executed="gaussButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlB}" Executed="imButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlK}" Executed="kerButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlN}" Executed="basisButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlM}" Executed="multButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlS}" Executed="sumButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlF}" Executed="fillButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlP}" Executed="projectButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlD}" Executed="diagButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlC}" Executed="canonButton_Click"/>
+    </Window.CommandBindings>
+    <Grid>
+        <Label x:Name="detLabel" Content="det = " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="32" Width="111" FontSize="16"/>
+        <Label x:Name="rkLabel" Content="rk = " HorizontalAlignment="Left" Margin="126,10,0,0" VerticalAlignment="Top" Height="32" Width="77" FontSize="16"/>
+        <Button x:Name="newButton" Content="Add New" Margin="0,15,11.4,0" VerticalAlignment="Top" FontSize="14" Height="23" Click="newButton_Click" HorizontalAlignment="Right" Width="80"/>
+        <Grid Margin="0,45,0,5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button x:Name="transposeButton" Grid.Column="0" Grid.Row="0" Content="Transpose" Height="23" Width="80" FontSize="14" Click="transposeButton_Click"/>
+            <Button x:Name="inverseButton" Grid.Column="1" Grid.Row="0" Content="Inverse" Height="23" Width="80" FontSize="14" Click="inverseButton_Click"/>
+            <Button x:Name="gaussButton" Grid.Column="2" Grid.Row="0" Content="Gauss" Height="23" Width="80" FontSize="14" Click="gaussButton_Click"/>
+            <Button x:Name="imButton" Grid.Column="0" Grid.Row="1" Content="Im" Height="23" Width="80" FontSize="14" Click="imButton_Click"/>
+            <Button x:Name="kerButton" Grid.Column="1" Grid.Row="1" Content="Ker" Height="23" Width="80" FontSize="14" Click="kerButton_Click"/>
+            <Button x:Name="basisButton" Grid.Column="2" Grid.Row="1" Content="New Basis" Height="23" Width="80" FontSize="14" Click="basisButton_Click"/>
+            <Button x:Name="multButton" Grid.Column="0" Grid.Row="2" Content="Multiply" Height="23" Width="80" FontSize="14" Click="multButton_Click"/>
+            <Button x:Name="sumButton" Grid.Column="1" Grid.Row="2" Content="Sum" Height="23" Width="80" FontSize="14" Click="sumButton_Click"/>
+            <Button x:Name="fillButton" Grid.Column="2" Grid.Row="2" Content="Fill" Height="23" Width="80" FontSize="14" Click="fillButton_Click"/>
+            <Button x:Name="projectButton" Grid.Column="0" Grid.Row="3" Content="Projector" Height="23" Width="80" FontSize="14" Click="projectButton_Click"/>
+            <Button x:Name="diagButton" Grid.Column="1" Grid.Row="3" Content="Diagonalize" Height="23" Width="80" FontSize="14" Click="diagButton_Click"/>
+            <Button x:Name="canonButton" Grid.Column="2" Grid.Row="3" Content="Canonical" Height="23" Width="80" FontSize="14" Click="canonButton_Click"/>
+            <Label x:Name="nameLabel" Grid.Column="0" Grid.Row="4" Content="Name:" HorizontalAlignment="Right" VerticalAlignment="Center" Height="32" Width="60" FontSize="16"/>
+            <TextBox x:Name="nameTextBox" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="100" FontSize="16" GotFocus="nameTextBox_GotFocus" PreviewMouseUp="nameTextBox_PreviewMouseUp"/>
+        </Grid>
+    </Grid>
+</Window>

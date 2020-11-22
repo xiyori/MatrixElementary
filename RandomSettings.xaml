@@ -1,0 +1,28 @@
+﻿<Window x:Class="Matrix_Elementary.RandomSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matrix_Elementary"
+        mc:Ignorable="d"
+        Title="Random settings" Height="200" Width="303.6" ResizeMode="NoResize" Closing="Window_Closing" PreviewKeyUp="Window_PreviewKeyUp" Icon="images/ico_white.ico">
+    <Window.Resources>
+        <Style TargetType="Button" x:Name="DefaultButton"/>
+        <Style TargetType="TextBox" x:Name="DefaultTextBox"/>
+    </Window.Resources>
+    <Grid>
+        <Label x:Name="labelP" Content="Set random parameters:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="label1" Content="Min:" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top" Height="27" FontSize="14"/>
+        <TextBox x:Name="minTextBox" HorizontalAlignment="Left" Height="24" Margin="48,47,0,0" TextWrapping="Wrap" Text="-10" VerticalAlignment="Top" Width="43" FontSize="15" PreviewTextInput="TextBox_PreviewTextInput" PreviewMouseUp="TextBox_MouseUp" GotFocus="TextBox_GotFocus" PreviewKeyDown="minTextBox_KeyDown" PreviewKeyUp="TextBox_PreviewKeyUp"/>
+        <Label x:Name="label2" Content="Max:" HorizontalAlignment="Left" Margin="99,44,0,0" VerticalAlignment="Top" Height="27" FontSize="14"/>
+        <TextBox x:Name="maxTextBox" HorizontalAlignment="Left" Height="24" Margin="140,47,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="40" FontSize="15" PreviewTextInput="TextBox_PreviewTextInput" PreviewMouseUp="TextBox_MouseUp" GotFocus="TextBox_GotFocus" PreviewKeyDown="maxTextBox_KeyDown" PreviewKeyUp="TextBox_PreviewKeyUp"/>
+        <Label x:Name="label3" Content="Step:" HorizontalAlignment="Left" Margin="187,44,0,0" VerticalAlignment="Top" Height="27" FontSize="14"/>
+        <TextBox x:Name="stepTextBox" HorizontalAlignment="Left" Height="24" Margin="228,47,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" FontSize="15" PreviewTextInput="TextBox_PreviewTextInput" PreviewMouseUp="TextBox_MouseUp" GotFocus="TextBox_GotFocus" PreviewKeyDown="stepTextBox_KeyDown" PreviewKeyUp="TextBox_PreviewKeyUp"/>
+        <StackPanel x:Name="stackOptions" Margin="13,81,86.6,15.4">
+            <RadioButton x:Name="normalChecker" GroupName="Method" Content="Normal" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" IsChecked="True" Checked="normalChecker_Checked"/>
+            <RadioButton x:Name="symmetricChecker" GroupName="Method" Content="Symmetric" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Checked="symmetricChecker_Checked"/>
+            <RadioButton x:Name="skewChecker" GroupName="Method" Content="Skew-symmetric" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" Checked="skewChecker_Checked"/>
+        </StackPanel>
+        <Button x:Name="buttonOK" Content="OK" Margin="0,0,7.6,8" Click="Button_Click" IsDefault="True" HorizontalAlignment="Right" Width="53" Height="19" VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>

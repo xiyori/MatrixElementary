@@ -1,0 +1,43 @@
+﻿<Window x:Name="mainWindow" x:Class="Matrix_Elementary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matrix_Elementary"
+        mc:Ignorable="d"
+        Title="Matrix Elementary" Height="280" Width="500" Loaded="Window_Loaded" Closing="Window_Closing" PreviewKeyUp="mainWindow_PreviewKeyUp" Background="White" Icon="images/ico_white.ico" MinWidth="500" MinHeight="280" MouseMove="Window_MouseMove" MouseDown="mainWindow_MouseDown">
+    <Window.Resources>
+        <Style TargetType="Button" x:Name="DefaultButton"/>
+        <Style TargetType="TextBox" x:Name="DefaultTextBox"/>
+    </Window.Resources>
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:Commands.CtrlE}" Executed="modeButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlD}" Executed="dimButton_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlL}" Executed="latex_Click"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlP}" Executed="Action_Executed"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlT}" Executed="Transpose"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlI}" Executed="Inverse"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlG}" Executed="Gauss"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlB}" Executed="ImBasis"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlK}" Executed="KerBasis"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlN}" Executed="NewBasis"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlM}" Executed="Multiply"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlS}" Executed="Sum"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlF}" Executed="Fill"/>
+        <CommandBinding Command="{x:Static local:Commands.CtrlR}" Executed="Random"/>
+    </Window.CommandBindings>
+    <Grid x:Name="MainGrid">
+        <Grid.CommandBindings>
+            <CommandBinding Executed="Undo_Executed" Command="ApplicationCommands.Undo"/>
+            <CommandBinding Executed="Redo_Executed" Command="ApplicationCommands.Redo"/>
+        </Grid.CommandBindings>
+        <Image x:Name="imageBack" RenderOptions.BitmapScalingMode="HighQuality"
+RenderOptions.EdgeMode="Aliased" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Hidden"/>
+        <Button x:Name="modeButton" Content="Transform" Margin="0,0,296.2,19.8" Click="modeButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
+        <Button x:Name="dimButton" Content="Dimensions" Margin="0,0,208.2,19.8" Click="dimButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
+        <Button x:Name="latexButton" Content="Export LaTeX" Margin="0,0,111.2,19.8" Click="latex_Click" HorizontalAlignment="Right" Width="84" Height="19" VerticalAlignment="Bottom"/>
+        <Button x:Name="settingsButton" Content="Settings" Margin="0,0,24.2,19.8" Click="settingsButton_Click" Height="19" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        <Button x:Name="actionButton" Content="Action" Margin="0,0,384.2,19.8" Click="actionButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
+        <local:FadingPopupControl x:Name="popup1"/>
+    </Grid>
+</Window>
