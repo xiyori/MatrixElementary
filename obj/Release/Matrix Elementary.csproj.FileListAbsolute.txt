@@ -1,0 +1,39 @@
+D:\Foma\Documents\C#\Matrix Elementary\bin\Release\Matrix Elementary.exe.config
+D:\Foma\Documents\C#\Matrix Elementary\bin\Release\Matrix Elementary.exe.manifest
+D:\Foma\Documents\C#\Matrix Elementary\bin\Release\Matrix Elementary.application
+D:\Foma\Documents\C#\Matrix Elementary\bin\Release\Matrix Elementary.exe
+D:\Foma\Documents\C#\Matrix Elementary\bin\Release\Matrix Elementary.pdb
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.csprojAssemblyReference.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\FadingPopupControl.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\ActionPanel.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\ChooseDialog.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\DialogCoeff.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Dialogue.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\LaTeX_ExportWindow.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\MainWindow.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\FadingPopupControl.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\RandomSettings.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Settings.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\StringDialog.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\App.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary_MarkupCompile.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary_MarkupCompile.lref
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\App.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\ActionPanel.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\ChooseDialog.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\DialogCoeff.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Dialogue.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\LaTeX_ExportWindow.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\MainWindow.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\RandomSettings.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Settings.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\StringDialog.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.g.resources
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix_Elementary.Properties.Resources.resources
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.csproj.GenerateResource.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.csproj.CoreCompileInputs.cache
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.exe.manifest
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.application
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.exe
+D:\Foma\Documents\C#\Matrix Elementary\obj\Release\Matrix Elementary.pdb
