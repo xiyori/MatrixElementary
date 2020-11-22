@@ -822,10 +822,10 @@ namespace Matrix_Elementary
             panel.Owner = this;
             panel.ShowDialog();
             if (panel.MatrixName.Length > 0) TryRename(panel.MatrixName);
-            if (panel.DialogResult == true) DoAction(panel.SelectedOption);
+            if (panel.DialogResult == true) ExecuteAction(panel.SelectedOption);
         }
 
-        void DoAction(Action action, string arg = "")
+        void ExecuteAction(Action action, string arg = "")
         {
             if (!edit_mode)
             {
@@ -1137,6 +1137,18 @@ namespace Matrix_Elementary
                 {
                     popup1.ShowDialogBox(this, ex.Message);
                 }
+            } else if (action == Action.Canonical)
+            {
+                SyncInput();
+                try
+                {
+                    Export(matrix.Canonical());
+                    ApplyChanges();
+                }
+                catch (Exception ex)
+                {
+                    popup1.ShowDialogBox(this, ex.Message);
+                }
             }
         }
 
@@ -1173,25 +1185,25 @@ namespace Matrix_Elementary
         }
 
         private void Transpose(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Transpose);
+            ExecuteAction(Action.Transpose);
         private void Inverse(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Inverse, "no_export");
+            ExecuteAction(Action.Inverse, "no_export");
         private void Gauss(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Gauss);
+            ExecuteAction(Action.Gauss);
         private void ImBasis(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Im);
+            ExecuteAction(Action.Im);
         private void KerBasis(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Ker);
+            ExecuteAction(Action.Ker);
         private void NewBasis(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.NewBasis);
+            ExecuteAction(Action.NewBasis);
         private void Multiply(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Multiply);
+            ExecuteAction(Action.Multiply);
         private void Sum(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Sum);
+            ExecuteAction(Action.Sum);
         private void Fill(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Fill);
+            ExecuteAction(Action.Fill);
         private void Random(object sender, ExecutedRoutedEventArgs e) =>
-            DoAction(Action.Fill, "Random");
+            ExecuteAction(Action.Fill, "Random");
 
         private void Action_Executed(object sender, ExecutedRoutedEventArgs e)
         {
@@ -1200,7 +1212,7 @@ namespace Matrix_Elementary
 
         private void ConfirmAction()
         {
-            DoAction(action_in_progress, input_child.name);
+            ExecuteAction(action_in_progress, input_child.name);
             awaiting_confirmation = false;
             CancelAwait();
         }

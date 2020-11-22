@@ -33,11 +33,35 @@
         </Grid.CommandBindings>
         <Image x:Name="imageBack" RenderOptions.BitmapScalingMode="HighQuality"
 RenderOptions.EdgeMode="Aliased" Stretch="UniformToFill" VerticalAlignment="Center" Visibility="Hidden"/>
-        <Button x:Name="modeButton" Content="Transform" Margin="0,0,296.2,19.8" Click="modeButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
-        <Button x:Name="dimButton" Content="Dimensions" Margin="0,0,208.2,19.8" Click="dimButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
-        <Button x:Name="latexButton" Content="Export LaTeX" Margin="0,0,111.2,19.8" Click="latex_Click" HorizontalAlignment="Right" Width="84" Height="19" VerticalAlignment="Bottom"/>
+        <Button x:Name="modeButton" Content="Transform" Margin="0,0,296.2,19.8" Click="modeButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom">
+            <Button.ToolTip>
+                <ToolTip>
+                    Ctrl+E
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button x:Name="dimButton" Content="Dimensions" Margin="0,0,208.2,19.8" Click="dimButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom">
+            <Button.ToolTip>
+                <ToolTip>
+                    Ctrl+D
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button x:Name="latexButton" Content="Export LaTeX" Margin="0,0,111.2,19.8" Click="latex_Click" HorizontalAlignment="Right" Width="84" Height="19" VerticalAlignment="Bottom">
+            <Button.ToolTip>
+                <ToolTip>
+                    Ctrl+L
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
         <Button x:Name="settingsButton" Content="Settings" Margin="0,0,24.2,19.8" Click="settingsButton_Click" Height="19" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
-        <Button x:Name="actionButton" Content="Action" Margin="0,0,384.2,19.8" Click="actionButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom"/>
+        <Button x:Name="actionButton" Content="Action" Margin="0,0,384.2,19.8" Click="actionButton_Click" HorizontalAlignment="Right" Width="75" Height="19" VerticalAlignment="Bottom">
+            <Button.ToolTip>
+                <ToolTip>
+                    Ctrl+P
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
         <local:FadingPopupControl x:Name="popup1"/>
     </Grid>
 </Window>

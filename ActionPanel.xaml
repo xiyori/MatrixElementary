@@ -28,7 +28,13 @@
     <Grid>
         <Label x:Name="detLabel" Content="det = " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="32" Width="111" FontSize="16"/>
         <Label x:Name="rkLabel" Content="rk = " HorizontalAlignment="Left" Margin="126,10,0,0" VerticalAlignment="Top" Height="32" Width="77" FontSize="16"/>
-        <Button x:Name="newButton" Content="Add New" Margin="0,15,11.4,0" VerticalAlignment="Top" FontSize="14" Height="23" Click="newButton_Click" HorizontalAlignment="Right" Width="80"/>
+        <Button x:Name="newButton" Content="Add New" Margin="0,15,11.4,0" VerticalAlignment="Top" FontSize="14" Height="23" Click="newButton_Click" HorizontalAlignment="Right" Width="80">
+            <Button.ToolTip>
+                <ToolTip>
+                    Ctrl+A
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
         <Grid Margin="0,45,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -42,18 +48,90 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Button x:Name="transposeButton" Grid.Column="0" Grid.Row="0" Content="Transpose" Height="23" Width="80" FontSize="14" Click="transposeButton_Click"/>
-            <Button x:Name="inverseButton" Grid.Column="1" Grid.Row="0" Content="Inverse" Height="23" Width="80" FontSize="14" Click="inverseButton_Click"/>
-            <Button x:Name="gaussButton" Grid.Column="2" Grid.Row="0" Content="Gauss" Height="23" Width="80" FontSize="14" Click="gaussButton_Click"/>
-            <Button x:Name="imButton" Grid.Column="0" Grid.Row="1" Content="Im" Height="23" Width="80" FontSize="14" Click="imButton_Click"/>
-            <Button x:Name="kerButton" Grid.Column="1" Grid.Row="1" Content="Ker" Height="23" Width="80" FontSize="14" Click="kerButton_Click"/>
-            <Button x:Name="basisButton" Grid.Column="2" Grid.Row="1" Content="New Basis" Height="23" Width="80" FontSize="14" Click="basisButton_Click"/>
-            <Button x:Name="multButton" Grid.Column="0" Grid.Row="2" Content="Multiply" Height="23" Width="80" FontSize="14" Click="multButton_Click"/>
-            <Button x:Name="sumButton" Grid.Column="1" Grid.Row="2" Content="Sum" Height="23" Width="80" FontSize="14" Click="sumButton_Click"/>
-            <Button x:Name="fillButton" Grid.Column="2" Grid.Row="2" Content="Fill" Height="23" Width="80" FontSize="14" Click="fillButton_Click"/>
-            <Button x:Name="projectButton" Grid.Column="0" Grid.Row="3" Content="Projector" Height="23" Width="80" FontSize="14" Click="projectButton_Click"/>
-            <Button x:Name="diagButton" Grid.Column="1" Grid.Row="3" Content="Diagonalize" Height="23" Width="80" FontSize="14" Click="diagButton_Click"/>
-            <Button x:Name="canonButton" Grid.Column="2" Grid.Row="3" Content="Canonical" Height="23" Width="80" FontSize="14" Click="canonButton_Click"/>
+            <Button x:Name="transposeButton" Grid.Column="0" Grid.Row="0" Content="Transpose" Height="23" Width="80" FontSize="14" Click="transposeButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+T
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="inverseButton" Grid.Column="1" Grid.Row="0" Content="Inverse" Height="23" Width="80" FontSize="14" Click="inverseButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+I
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="gaussButton" Grid.Column="2" Grid.Row="0" Content="Gauss" Height="23" Width="80" FontSize="14" Click="gaussButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+G
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="imButton" Grid.Column="0" Grid.Row="1" Content="Im" Height="23" Width="80" FontSize="14" Click="imButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+B
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="kerButton" Grid.Column="1" Grid.Row="1" Content="Ker" Height="23" Width="80" FontSize="14" Click="kerButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+K
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="basisButton" Grid.Column="2" Grid.Row="1" Content="New Basis" Height="23" Width="80" FontSize="14" Click="basisButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+N
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="multButton" Grid.Column="0" Grid.Row="2" Content="Multiply" Height="23" Width="80" FontSize="14" Click="multButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+M
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="sumButton" Grid.Column="1" Grid.Row="2" Content="Sum" Height="23" Width="80" FontSize="14" Click="sumButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+S
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="fillButton" Grid.Column="2" Grid.Row="2" Content="Fill" Height="23" Width="80" FontSize="14" Click="fillButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+F
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="projectButton" Grid.Column="0" Grid.Row="3" Content="Projector" Height="23" Width="80" FontSize="14" Click="projectButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+P
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="diagButton" Grid.Column="1" Grid.Row="3" Content="Diagonalize" Height="23" Width="80" FontSize="14" Click="diagButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+D
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
+            <Button x:Name="canonButton" Grid.Column="2" Grid.Row="3" Content="Canonical" Height="23" Width="80" FontSize="14" Click="canonButton_Click">
+                <Button.ToolTip>
+                    <ToolTip>
+                        Ctrl+C
+                    </ToolTip>
+                </Button.ToolTip>
+            </Button>
             <Label x:Name="nameLabel" Grid.Column="0" Grid.Row="4" Content="Name:" HorizontalAlignment="Right" VerticalAlignment="Center" Height="32" Width="60" FontSize="16"/>
             <TextBox x:Name="nameTextBox" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="100" FontSize="16" GotFocus="nameTextBox_GotFocus" PreviewMouseUp="nameTextBox_PreviewMouseUp"/>
         </Grid>

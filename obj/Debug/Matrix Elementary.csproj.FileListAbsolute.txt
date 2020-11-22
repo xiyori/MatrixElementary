@@ -1,7 +1,6 @@
 D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.exe.config
 D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.exe
 D:\Foma\Documents\C#\Matrix Elementary\bin\Debug\Matrix Elementary.pdb
-D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.csprojResolveAssemblyReference.cache
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Dialogue.g.cs
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\MainWindow.g.cs
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\App.g.cs
@@ -37,3 +36,4 @@ D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ChooseDialog.g.cs
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\ChooseDialog.baml
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\RandomSettings.g.cs
 D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\RandomSettings.baml
+D:\Foma\Documents\C#\Matrix Elementary\obj\Debug\Matrix Elementary.csprojAssemblyReference.cache

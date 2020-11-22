@@ -374,6 +374,11 @@ namespace Matrix_Elementary.Scripts
             return output + "\\end{align*}";
         }
 
+        public string Canonical()
+        {
+            throw new NotImplementedException();
+        }
+
         public MyMatrix Adjunct()
         {
             if (n != m)
